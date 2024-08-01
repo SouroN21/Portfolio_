@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation"; // Change here
+import { usePathname } from "next/navigation"; 
 
 const links = [
     {
