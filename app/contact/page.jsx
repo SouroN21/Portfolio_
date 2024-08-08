@@ -65,7 +65,7 @@ const Contact = () => {
                                 placeholder="Your Messege here"
                                 name="message"
                             />
-                            <Button size="md" className="items-center max-w-40 h-10" type="submit">
+                            <Button size="md" className="items-center max-w-40 h-10 bg-accent-hover  text-black text-1xl" type="submit">
                                 Send Message 
                             </Button> 
                         </form>

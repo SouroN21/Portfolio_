@@ -27,6 +27,28 @@ import {
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { motion } from "framer-motion";
 
+// Function to calculate age in years and days based on birthdate
+const calculateAge = (birthDate) => {
+    const today = new Date();
+    const birthDateObj = new Date(birthDate);
+
+    let ageYears = today.getFullYear() - birthDateObj.getFullYear();
+    let ageDays = Math.floor((today - birthDateObj) / (1000 * 60 * 60 * 24)); // Total days
+
+    // Adjust for cases where birthday hasn't occurred yet this year
+    const monthDifference = today.getMonth() - birthDateObj.getMonth();
+    if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDateObj.getDate())) {
+        ageYears--;
+        ageDays = Math.floor((today - new Date(today.getFullYear() - 1, birthDateObj.getMonth(), birthDateObj.getDate())) / (1000 * 60 * 60 * 24));
+    } else {
+        // Calculate remaining days if birthday has already occurred this year
+        const thisYearBirthday = new Date(today.getFullYear(), birthDateObj.getMonth(), birthDateObj.getDate());
+        ageDays = Math.floor((today - thisYearBirthday) / (1000 * 60 * 60 * 24));
+    }
+
+    return { years: ageYears, days: ageDays };
+};
+const birthDate = '2002-07-03';
 // about data
 const about = {
     title: 'About me.. ',
@@ -38,15 +60,15 @@ const about = {
         },
         {
             fieldName: "Age",
-            fieldValue: "22",
+            fieldValue: calculateAge(birthDate).toString(),
         },
         {
             fieldName: "Location",
             fieldValue: "Sri Lanka",
         },
         {
-            fieldName: "Specialization",
-            fieldValue: "Information Technology",
+            fieldName: "Education",
+            fieldValue: "BSc(Hons)in Information Technology",
         },
         {
             fieldName: "Email",
@@ -223,12 +245,12 @@ const Resume = () => {
                     opacity: 1,
                     transition: { delay: 1.4, duration: 0.4, ease: "easeIn" },
                 }}
-                className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
+                className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0 "
             >
-                <div className="container mx-auto">
+                <div className="container mx-auto ">
                     <Tabs
                         defaultValue="experience"
-                        className="flex flex-col xl:flex-row gap-[60px]"
+                        className="flex flex-col xl:flex-row gap-[60px] "
                     >
                         <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6 mt-1">
                             <TabsTrigger value="experience">Experience</TabsTrigger>
@@ -237,7 +259,7 @@ const Resume = () => {
                             <TabsTrigger value="about">About</TabsTrigger>
                         </TabsList>
 
-                        <div className="min-h-[70vh] w-full">
+                        <div className="min-h-[70vh] w-full -ml-12">
                             <TabsContent value="experience" className="w-full">
                                 <div className="flex flex-col gap-[30px] text-center xl:text-left">
                                     <h3 className="text-4xl font-bold">{experience.title}</h3>
@@ -326,9 +348,9 @@ const Resume = () => {
                             </TabsContent>
 
                             <TabsContent value="about" className="w-full text-center xl:text-left">
-                                <div className="flex flex-col gap-[30px]">
-                                    <h3 className="text-4xl font-bold">{about.title}</h3>
-                                    <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                                <div className="flex flex-col gap-[30px] ">
+                                    <h3 className="text-4xl font-bold ml-16">{about.title}</h3>
+                                    <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 ml-16">
                                         {about.description}
                                     </p>
                                     <ScrollArea className="h-[400px] ">
