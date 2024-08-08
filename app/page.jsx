@@ -14,7 +14,9 @@ const Home = () => {
               <span className="text-accent">Naveen Dasunpriya</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              I am a passionate software developer with experience in building dynamic web applications. I love to create intuitive user interfaces and improve user experiences through thoughtful design and coding practices.
+              I'm an undergraduate pursuing a <span className="font-bold">BSc (Hons) in Information Technology at SLIIT </span>. 
+              Passionate about creative design and coding, I combine creativity and technology to bring ideas to life. 
+              Explore my work and see how innovation meets execution. 
             </p>
             <div className="flex flex-col items-center gap-8 xl:flex-row">
             <a 

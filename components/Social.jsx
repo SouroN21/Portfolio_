@@ -1,14 +1,15 @@
 import Link from "next/link";
 
-import {FaGithub, FaLinkedinIn,FaYoutube ,FaFacebook,FaWhatsapp, FaInstagram} from "react-icons/fa";
+import {FaGithub, FaLinkedinIn,FaYoutube ,FaFacebook,FaWhatsapp, FaInstagram,FaTiktok} from "react-icons/fa";
 
 const socials=[
-    {icon:<FaGithub/>,path:"https://github.com/naveendasun321"},
+    {icon:<FaGithub/>,path:"https://github.com/SouroN21"},
     {icon:<FaLinkedinIn/>,path:""},
     {icon:<FaYoutube/>,path:""},
-    {icon:<FaFacebook/>,path:""},
-    {icon:<FaInstagram/>,path:""},
-   /* {icon:<FaWhatsapp/>,path:""},*/
+    {icon:<FaFacebook/>,path:"https://www.facebook.com/profile.php?id=100009860147015"},
+    {icon:<FaInstagram/>,path:"https://www.instagram.com/_.souron.__?"},
+    {icon:<FaWhatsapp/>,path:"https://wa.me/94766876368"},
+    {icon:<FaTiktok/>,path:"https://www.tiktok.com/@souron21?"},
 ];
 
 const Social =({containerStyles , iconStyles})=>{
