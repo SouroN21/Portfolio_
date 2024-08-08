@@ -23,12 +23,12 @@ const projects = [
     {
         num: "01",
         category: "Frontend",
-        title: "Project 1",
-        description: "Description for Description for Project 1Description for Project 1Description for Project 1Description for Project 1Description for Project 1Project 1",
-        stack: [{ name: "HTML 5" }, { name: "CSS 3" }, { name: "JavaScript" }],
-        image: '/image.png',
-        live: "https://liveproject1.com",
-        github: "https://github.com/project1",
+        title: "Portfolio Website",
+        description: "A personal portfolio website showcasing my projects, skills, and experience. Built with Next.js and TailwindCSS for a responsive and modern design.",
+        stack: [{ name: "Next.js" }, { name: "TailwindCSS" }, { name: "JavaScript" }],
+        image: '/project1.png',
+        live: "https://portfolio-theta-five-91.vercel.app/",
+        github: "https://github.com/SouroN21/Portfolio_",
     },
     {
         num: "02",
@@ -69,9 +69,9 @@ const Work = () => {
                 className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
             >
                 <div className="container mx-auto">
-                    <div className="flex flex-col xl:flex-row xl:gap-[30px]">
-                        <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
-                            <div className="flex flex-col gap-[30px] h-[50%]">
+                    <div className="flex flex-col xl:flex-row xl:gap-[30px] ">
+                        <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none ">
+                            <div className="flex flex-col gap-[30px] h-[50%] ">
                                 {/* Outline num */}
                                 <div className="font-extrabold leading-none text-transparent text-8xl text-outline">
                                     {project.num}
@@ -128,16 +128,16 @@ const Work = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="w-full xl:w-[50%]">
+                        <div className="w-full xl:w-[70%]">
                             <Swiper
                                 spaceBetween={30}
                                 slidesPerView={1}
-                                className="xl:h-[520px] mb-12"
+                                className="xl:h-[520px] mb-12 "
                                 onSlideChange={handleSlideChange}
                             >
                                 {projects.map((project, index) => (
                                     <SwiperSlide key={index} className="w-full">
-                                        <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
+                                        <div className="h-[460px] relative group flex justify-center items-center bg-primary  border-2 border-accent rounded-lg">
                                             {/* Overlay */}
                                             <div className="absolute top-0 bottom-0 z-10 w-full h-full bg-black/10"></div>
                                             {/* Image */}
@@ -145,7 +145,7 @@ const Work = () => {
                                                 <Image
                                                     src={project.image}
                                                     fill
-                                                    className="object-cover"
+                                                    className="object-cover rounded-lg"
                                                     alt={project.title}
                                                 />
                                             </div>

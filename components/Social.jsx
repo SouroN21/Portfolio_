@@ -4,7 +4,7 @@ import {FaGithub, FaLinkedinIn,FaYoutube ,FaFacebook,FaWhatsapp, FaInstagram,FaT
 
 const socials=[
     {icon:<FaGithub/>,path:"https://github.com/SouroN21"},
-    {icon:<FaLinkedinIn/>,path:""},
+    {icon:<FaLinkedinIn/>,path:"https://www.linkedin.com/in/naveen-dasunpriya-336159322"},
     {icon:<FaYoutube/>,path:""},
     {icon:<FaFacebook/>,path:"https://www.facebook.com/profile.php?id=100009860147015"},
     {icon:<FaInstagram/>,path:"https://www.instagram.com/_.souron.__?"},

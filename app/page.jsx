@@ -10,11 +10,11 @@ const Home = () => {
           <div className="order-2 text-center xl:text-left xl:order-none">
             <span>Software Developer</span>
             <h1 className="h1">
-              Hello I am <br /> 
-              <span className="text-accent">Naveen Dasunpriya</span>
+              Hello! I am <br /> 
+              <span className="bg-gradient-to-b from-accent to-white bg-clip-text text-transparent">Naveen Dasunpriya</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              I'm an undergraduate pursuing a <span className="font-bold">BSc (Hons) in Information Technology at SLIIT </span>. 
+              I'm an undergraduate pursuing a <span className="font-bold text-blue-500">BSc (Hons) in Information Technology at SLIIT </span>. 
               Passionate about creative design and coding, I combine creativity and technology to bring ideas to life. 
               Explore my work and see how innovation meets execution. 
             </p>
