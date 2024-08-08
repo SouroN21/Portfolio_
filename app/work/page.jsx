@@ -151,7 +151,6 @@ const Work = () => {
                                             </div>
                                         </div>
                                     </SwiperSlide>
-                                    
                                 ))}
                             </Swiper>
                         </div>
