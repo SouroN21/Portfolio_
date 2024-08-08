@@ -21,7 +21,7 @@ const info = [
     {
         icon: <FaPhoneAlt />,
         title: "Phone",
-        description: "0766876368",
+        description: "+94766876368",
     },
     {
         icon: <FaEnvelope />,
@@ -31,7 +31,7 @@ const info = [
     {
         icon: <FaMapMarkedAlt />,
         title: "Address",
-        description: "Sri Lanka",
+        description: "331/A Kanupelella Badulla",
     },
 ];
 
@@ -48,22 +48,24 @@ const Contact = () => {
             <div className="container max-auto">
                 <div className="flex flex-col xl:flex-row gap-[30px] ">
                     <div className="xl:w-[54%] order-2 xl:-order-none ">
-                        <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
+                        <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl" 
+                        action="https://formspree.io/f/xkgwbjjw" method="POST">
                             <h3 className="text-4xl text-accent">Let&apos;s Work Together</h3>
                             <p className="text-white/60">
                                 Please fill out the form below.
                             </p>
                             <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-                                <Input type="text" placeholder="First Name" />
-                                <Input type="text" placeholder="Last Name" />
-                                <Input type="email" placeholder="Email" />
-                                <Input type="tel" placeholder="Phone" />
+                                <Input type="text" placeholder ="First Name" name="First_Name" />
+                                <Input type="text" placeholder="Last Name" name="Last_Name"/>
+                                <Input type="email" placeholder="Email" name="email"/>
+                                <Input type="tel" placeholder="Phone" name="phone"/>
                             </div>
                             <Textarea 
                                 className="h-[200px]"
                                 placeholder="Your Messege here"
+                                name="message"
                             />
-                            <Button size="md" className="items-center max-w-40">
+                            <Button size="md" className="items-center max-w-40 h-10" type="submit">
                                 Send Message 
                             </Button> 
                         </form>

@@ -7,26 +7,26 @@ const services=[
     {
         num:'01',
         title:'Web Develope',
-        description:'fdsfd',
-        href:""
+        description:'fdsfdsfdsfdfdsfdfdsfdfdsfdfdsfdfdfdsfdsfdfdsfdfdsfdfdsfdfdsfdfdfdsfdsfdfdsfdfdsfdfdsfdfdsfdfdfdsfdsfdfdsfdfdsfdfdsfdfdsfdfdfdsfdfdsfdfdsfdfdsfdfdsfdfd',
+        href:"https://www.google.com"
     },
     {
         num:'02',
         title:'UI',
         description:'fdsfd',
-        href:""
+        href:"https://www.google.com"
     },
     {
         num:'03',
         title:'CEO',
         description:'fdsfd',
-        href:""
+        href:"https://www.google.com"
     },
     {
         num:'04',
         title:'LOGO',
         description:'fdsfd',
-        href:""
+        href:"https://www.google.com"
     },
 ];
 

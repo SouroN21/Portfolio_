@@ -4,12 +4,16 @@ import {
     FaHtml5,
     FaCss3,
     FaJs,
+    FaPhp,
+    FaJava,
     FaReact,
-    FaFigma,
     FaNodeJs,
+    FaGithub,
+    FaDatabase,
+    FaAndroid,
 } from "react-icons/fa";
 
-import { SiTailwindcss, SiNextJs } from "react-icons/si";
+import { SiTailwindcss, SiNextdotjs ,SiMongodb} from "react-icons/si";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
@@ -25,32 +29,32 @@ import { motion } from "framer-motion";
 
 // about data
 const about = {
-    title: 'About me',
-    description: "Description about yourself.",
+    title: 'About me.. ',
+    description: "I am Naveen Dasunpriya, a passionate IT undergraduate with a keen interest in technology and design. I strive to blend creativity with technical skills to build innovative solutions and explore new opportunities in the tech world.",
     info: [
         {
             fieldName: "Name",
-            fieldValue: "Naveen",
+            fieldValue: "Naveen Dasunpriya",
         },
         {
             fieldName: "Age",
-            fieldValue: "25",
+            fieldValue: "22",
         },
         {
             fieldName: "Location",
             fieldValue: "Sri Lanka",
         },
         {
-            fieldName: "Experience",
-            fieldValue: "3 years",
+            fieldName: "Specialization",
+            fieldValue: "Information Technology",
         },
         {
             fieldName: "Email",
-            fieldValue: "example@example.com",
+            fieldValue: "dasunpriyanaveen@gmail.com",
         },
         {
             fieldName: "Phone",
-            fieldValue: "+123456789",
+            fieldValue: "+94766876368",
         },
         {
             fieldName: "Website",
@@ -114,7 +118,7 @@ const experience = {
             position: "Position 2",
             duration: "Duration 2",
         },
-        // More experience items...
+        
     ]
 };
 
@@ -122,51 +126,36 @@ const experience = {
 const education = {
     icon: 'badge.svg',
     title: "My Education",
-    description: "Details about your educational background.",
+    description: "Details about my academic journey and achievements.",
     items: [
         {
-            institute: "Institute 1",
-            degree: "Degree 1",
-            duration: "Duration 1",
+            institute: "SLIIT",
+            degree: "BSc(Hons)in Information Technology",
+            duration: "4 year ",
         },
         {
-            institute: "Institute 2",
-            degree: "Degree 2",
-            duration: "Duration 2",
+            institute: "Badulla Centran Collage",
+            degree: "GCA A/L",
+            duration: "C3 passes",
         },
         {
-            institute: "Institute 2",
-            degree: "Degree 2",
-            duration: "Duration 2",
+            institute: "Badulla Centran Collage",
+            degree: "GCA O/L",
+            duration: "A9 passes",
         },
         {
-            institute: "Institute 2",
-            degree: "Degree 2",
-            duration: "Duration 2",
+            institute: "Badulla Dharmadutha Collage",
+            degree: "Grade 5 Scholership",
+            duration: "155",
         },
-        {
-            institute: "Institute 2",
-            degree: "Degree 2",
-            duration: "Duration 2",
-        },
-        {
-            institute: "Institute 1",
-            degree: "Degree 1",
-            duration: "Duration 1",
-        },
-        {
-            institute: "Institute 2",
-            degree: "Degree 2",
-            duration: "Duration 2",
-        },
-        // More education items...
+       
     ]
 };
 
 // skill data
 const skill = {
     title: "My Skills",
-    description: "Description about your skills.",
+    description: "Explore the range of technologies and tools I've mastered. From front-end development to back-end solutions, these skills highlight my proficiency and passion for coding.",
     skillList: [
         {
             icon: <FaHtml5 />,
@@ -181,18 +170,46 @@ const skill = {
             name: "JavaScript",
         },
         {
-            icon: <FaReact />,
-            name: "React",
+            icon: <FaGithub />,
+            name: "GitHub",
+        },
+        {
+            icon: <FaAndroid />,
+            name: "AndroidStudio",
+        },
+        {
+            icon: <FaPhp />,
+            name: "PHP",
+        },
+        {
+            icon: <SiNextdotjs />,
+            name: "NextJs",
+        },
+        {
+            icon: <FaJava />,
+            name: "JAVA",
         },
         {
             icon: <FaReact />,
             name: "React",
         },
         {
-            icon: <FaReact />,
-            name: "React",
+            icon: <SiTailwindcss />,
+            name: "TailWindCSS",
         },
-        // More skills...
+        {
+            icon: <FaNodeJs />,
+            name: "NodeJS",
+        },
+        {
+            icon: <SiMongodb />,
+            name: "MongoBD",
+        },
+        {
+            icon: <FaDatabase />,
+            name: "MySQL",
+        },
+        
     ]
 };
 
