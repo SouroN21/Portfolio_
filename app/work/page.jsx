@@ -98,17 +98,17 @@ const Work = () => {
                                     {/* Live project */}
                                     {project.live && (
                                         <Link href={project.live}>
-                                            <TooltipProvider delayDuration={100}>
-                                                <Tooltip>
-                                                    <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                                                        <BsArrowUpRight className="text-3xl text-white group-hover:text-accent" />
-                                                    </TooltipTrigger>
-                                                    <TooltipContent>
-                                                        <p>Live Project</p>
-                                                    </TooltipContent>
-                                                </Tooltip>
-                                            </TooltipProvider>
-                                        </Link>
+                                        <TooltipProvider delayDuration={100}>
+                                            <Tooltip>
+                                                <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                                                    <BsArrowUpRight className="text-3xl text-white group-hover:text-accent transition-transform duration-300 group-hover:rotate-45" />
+                                                </TooltipTrigger>
+                                                <TooltipContent>
+                                                    <p>Live Project</p>
+                                                </TooltipContent>
+                                            </Tooltip>
+                                        </TooltipProvider>
+                                    </Link>
                                     )}
                                     {/* GitHub repo */}
                                     {project.github && (
