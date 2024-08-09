@@ -241,7 +241,7 @@ const Resume = () => {
                             <TabsTrigger value="about">About</TabsTrigger>
                         </TabsList>
 
-                <div className="min-h-[70vh] w-full -ml-12">
+                <div className="min-h-[85vh] w-full  ">
                         
                         <TabsContent value="experience" className="w-full">
                             <div className="flex flex-col gap-[30px] text-center xl:text-left">
@@ -267,10 +267,8 @@ const Resume = () => {
                             </div>
                         </TabsContent>
 
-
-
-                            <TabsContent value="education" className="w-full">
-                                <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                            <TabsContent value="education" className="w-full h-full">
+                                <div className="flex flex-col gap-[30px] ">
                                     <h3 className="text-4xl font-bold">{education.title}</h3>
                                     <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                                         {education.description}
@@ -328,10 +326,10 @@ const Resume = () => {
                                 </div>
                             </TabsContent>
 
-                            <TabsContent value="about" className="w-full text-center xl:text-left">
+                            <TabsContent value="about" className="w-full text-center xl:text-left ">
                                 <div className="flex flex-col gap-[30px] ">
                                     <h3 className="text-4xl font-bold ml-16">{about.title}</h3>
-                                    <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 ml-16">
+                                    <p className="max-w-[600px] text-white/60 mx-2 xl:mx-0 ">
                                         {about.description}
                                     </p>
                                     <ScrollArea className="h-[400px] ">
@@ -342,7 +340,7 @@ const Resume = () => {
                                             className="flex flex-col xl:flex-row items-center justify-center xl:justify-start gap-2 xl:gap-4 p-4 bg-[#232329] rounded-lg shadow-md w-auto"
                                             >
                                                 <span className="text-sm text-white/60">{item.fieldName}:</span>
-                                                <span className="text-lg font-semibold text-white">{item.fieldValue}</span>
+                                                <span className="text-base font-semibold text-white">{item.fieldValue}</span>
                                             </li>
                                         ))}
                                     </ul>

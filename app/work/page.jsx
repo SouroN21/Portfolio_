@@ -144,7 +144,7 @@ const Work = () => {
                                             <div className="relative w-full h-full">
                                                 <Image
                                                     src={project.image}
-                                                    fill
+                                                    layout="fill"
                                                     className="object-cover rounded-lg"
                                                     alt={project.title}
                                                 />

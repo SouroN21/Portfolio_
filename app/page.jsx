@@ -4,7 +4,7 @@ import Social from "@/components/Social";
 import Photo from "@/components/Photo";
 const Home = () => { 
   return (
-    <section className="h-full">
+    <section className="h-full mb-6">
       <div className="container h-full mx-auto">
         <div className="flex flex-col items-center justify-between xl:flex-row xl:pt-8 xl:pd-24">
           <div className="order-2 text-center xl:text-left xl:order-none">
@@ -26,12 +26,12 @@ const Home = () => {
             <Button 
               variant="outline"
               size="lg"
-              className="flex items-center gap-2 uppercase bg-transparent border border-accent text-accent hover:bg-accent hover:text-primary"
+              className="flex items-center gap-2 uppercase bg-transparent border border-accent text-accent hover:bg-accent hover:text-primary -mt-5"
             >
                 <span>Download CV</span>
                 <FiDownload className="text-xl text-accent-hover"/>
               </Button></a>
-              <div className="flex gap-4">
+              <div className="flex gap-4 -mt-3">
                 <Social 
                   containerStyles="flex gap-6"
                   iconStyles="w-9 h-9 border boder-accent rounded-full flex
