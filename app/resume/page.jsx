@@ -27,28 +27,28 @@ import {
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { motion } from "framer-motion";
 
-// Function to calculate age in years and days based on birthdate
+// Function to calculate age 
 const calculateAge = (birthDate) => {
     const today = new Date();
     const birthDateObj = new Date(birthDate);
 
     let ageYears = today.getFullYear() - birthDateObj.getFullYear();
-    let ageDays = Math.floor((today - birthDateObj) / (1000 * 60 * 60 * 24)); // Total days
+    let ageDays = Math.floor((today - birthDateObj) / (1000 * 60 * 60 * 24));
 
-    // Adjust for cases where birthday hasn't occurred yet this year
     const monthDifference = today.getMonth() - birthDateObj.getMonth();
     if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDateObj.getDate())) {
         ageYears--;
         ageDays = Math.floor((today - new Date(today.getFullYear() - 1, birthDateObj.getMonth(), birthDateObj.getDate())) / (1000 * 60 * 60 * 24));
     } else {
-        // Calculate remaining days if birthday has already occurred this year
         const thisYearBirthday = new Date(today.getFullYear(), birthDateObj.getMonth(), birthDateObj.getDate());
         ageDays = Math.floor((today - thisYearBirthday) / (1000 * 60 * 60 * 24));
     }
 
-    return { years: ageYears, days: ageDays };
+    return `${ageYears} years and ${ageDays} days`;
 };
+
 const birthDate = '2002-07-03';
+
 // about data
 const about = {
     title: 'About me.. ',
@@ -60,7 +60,7 @@ const about = {
         },
         {
             fieldName: "Age",
-            fieldValue: calculateAge(birthDate).toString(),
+            fieldValue: calculateAge(birthDate),
         },
         {
             fieldName: "Location",
@@ -68,7 +68,7 @@ const about = {
         },
         {
             fieldName: "Education",
-            fieldValue: "BSc(Hons)in Information Technology",
+            fieldValue: "BSc(Hons)in Information Technology (UG)",
         },
         {
             fieldName: "Email",
@@ -78,14 +78,14 @@ const about = {
             fieldName: "Phone",
             fieldValue: "+94766876368",
         },
-        {
+       /* {
             fieldName: "Website",
             fieldValue: "https://example.com",
         },
         {
             fieldName: "LinkedIn",
             fieldValue: "https://linkedin.com/in/example",
-        },
+        },*/
     ]
 };
 
@@ -93,54 +93,36 @@ const about = {
 const experience = {
     icon: 'badge.svg',
     title: "My Experience",
-    description: "Details about your professional experience.",
+    description: "Details about my project experience.",
     items: [
         {
-            company: "Company 1",
-            position: "Position 1",
-            duration: "Duration 1",
+            project: "Online Pharmacy Portal",
+            role: "Medicine Store Management",
+            technology: "HTML, CSS, JS, MySQL",
+            description: "A group project where I worked on managing the medicine store component."
         },
         {
-            company: "Company 2",
-            position: "Position 2",
-            duration: "Duration 2",
+            project: "Online Help Desk",
+            role: "FAQ Management",
+            technology: "Java (OOP, MVC Architecture)",
+            description: "A group project where I developed the FAQ management component using Java, OOP, and MVC architecture."
+        } ,{
+            project: "Online Agriculture Store",
+            role: "Shopping Cart, Order Management, and Payment",
+            technology: "MERN (MongoDB, Express, React, Node.js)",
+            description: "A group project that implemented a real shopping cart, dynamic order confirmation emails, and order details. And Payment Gateway"
         },
         {
-            company: "Company 1",
-            position: "Position 1",
-            duration: "Duration 1",
-        },
-        {
-            company: "Company 2",
-            position: "Position 2",
-            duration: "Duration 2",
-        },
-        {
-            company: "Company 1",
-            position: "Position 1",
-            duration: "Duration 1",
-        },
-        {
-            company: "Company 2",
-            position: "Position 2",
-            duration: "Duration 2",
-        },
-        {
-            company: "Company 2",
-            position: "Position 2",
-            duration: "Duration 2",
-        },
-        {
-            company: "Company 1",
-            position: "Position 1",
-            duration: "Duration 1",
-        },
-        {
-            company: "Company 2",
-            position: "Position 2",
-            duration: "Duration 2",
-        },
-        
+            project: "My Portfolio Website",
+            role: "Full Stack Developer",
+            technology: "Next.js",
+            description: "A personal project where I created my portfolio website using Next.js and hosted it on Vercel."
+        }, {
+            project: "Car Game",
+            role: "Developer",
+            technology: "Android Studio, Kotlin",
+            description: "A mobile app development project completed at SLIIT, where I created a car game using Android Studio and Kotlin."
+        },         
     ]
 };
 
@@ -153,23 +135,23 @@ const education = {
         {
             institute: "SLIIT",
             degree: "BSc(Hons)in Information Technology",
-            duration: "4 year ",
+            duration: "",
         },
         {
             institute: "Badulla Centran Collage",
-            degree: "GCA A/L",
-            duration: "C3 passes",
+            degree: "GCE A/L",
+            duration: "Physical Stream - 2C and 1S",
         },
         {
-            institute: "Badulla Centran Collage",
-            degree: "GCA O/L",
-            duration: "A9 passes",
+            institute: "Badulla Central College",
+            degree: "GCE O/L",
+            duration: "A9 Passes",
         },
-        {
+        /*{
             institute: "Badulla Dharmadutha Collage",
             degree: "Grade 5 Scholership",
             duration: "155",
-        },
+        },*/
        
     ]
 };
@@ -252,41 +234,40 @@ const Resume = () => {
                         defaultValue="experience"
                         className="flex flex-col xl:flex-row gap-[60px] "
                     >
-                        <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6 mt-1">
+                        <TabsList className="flex flex-col w-full max-w-[350px] mx-auto xl:mx-0 gap-6 mt-1">
                             <TabsTrigger value="experience">Experience</TabsTrigger>
                             <TabsTrigger value="education">Education</TabsTrigger>
                             <TabsTrigger value="skill">Skills</TabsTrigger>
                             <TabsTrigger value="about">About</TabsTrigger>
                         </TabsList>
 
-                        <div className="min-h-[70vh] w-full -ml-12">
-                            <TabsContent value="experience" className="w-full">
-                                <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                                    <h3 className="text-4xl font-bold">{experience.title}</h3>
-                                    <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
-                                        {experience.description}
-                                    </p>
-                                    <ScrollArea className="h-[400px] ">
-                                        <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
-                                            {experience.items.map((item, index) => {
-                                                return(
-                                                <li
-                                                    key={index}
-                                                    className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
-                                                >
-                                                    <span className="text-accent">{item.duration}</span>
-                                                    <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.position}</h3>
-                                                    <div className="flex items-center gap-3">
-                                                        <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                                                        <p className="text-white/60">{item.company}</p>
-                                                    </div>
-                                                </li>
-                                                    );
-                                            })}
-                                        </ul>
-                                    </ScrollArea>
-                                </div>
-                            </TabsContent>
+                <div className="min-h-[70vh] w-full -ml-12">
+                        
+                        <TabsContent value="experience" className="w-full">
+                            <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                                <h3 className="text-4xl font-bold">{experience.title}</h3>
+                                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                                    {experience.description}
+                                </p>
+                                <ScrollArea className="h-[400px]">
+                                    <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                                        {experience.items.map((item, index) => (
+                                            <li
+                                                key={index}
+                                                className="bg-[#232329] p-6 rounded-lg shadow-lg flex flex-col gap-4 lg:gap-6 "
+                                            >
+                                                <h4 className="text-2xl font-semibold text-accent">{item.project}</h4>
+                                                <p className="text-lg font-medium text-white">{item.role}</p>
+                                                <p className="text-sm text-gray-400">{item.technology}</p>
+                                                <p className="text-base text-white mt-2">{item.description}</p>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </ScrollArea>
+                            </div>
+                        </TabsContent>
+
+
 
                             <TabsContent value="education" className="w-full">
                                 <div className="flex flex-col gap-[30px] text-center xl:text-left">
@@ -301,13 +282,13 @@ const Resume = () => {
                                                 <li
                                                     key={index}
                                                     className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
-                                                >
-                                                    <span className="text-accent">{item.duration}</span>
-                                                    <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.degree}</h3>
+                                                > 
+                                                    <h3 className="text-xl max-w-[500px] min-h-[60px] text-center lg:text-left font-bold">{item.degree}</h3>
                                                     <div className="flex items-center gap-3">
-                                                        <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+                                                        <span className="w-[10px] h-[10px] rounded-full bg-accent"></span>
                                                         <p className="text-white/60">{item.institute}</p>
                                                     </div>
+                                                    <span className="">{item.duration}</span>
                                                 </li>
                                             );
                                             })}
