@@ -36,7 +36,7 @@ const projects = [
         title: "Project 2",
         description: "Description for Project 2",
         stack: [{ name: "Node.js" }, { name: "Express" }, { name: "MongoDB" }],
-        image: '/image.png',
+        image: '/project2.png',
         live: "https://liveproject2.com",
         github: "https://github.com/project2",
     },
