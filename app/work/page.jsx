@@ -32,21 +32,21 @@ const projects = [
     },
     {
         num: "02",
-        category: "Backend",
-        title: "Project 2",
-        description: "Description for Project 2",
-        stack: [{ name: "Node.js" }, { name: "Express" }, { name: "MongoDB" }],
+        category: "Full Stack",
+        title: "Online Agriculture Store - FarmLink ",
+        description: "A platform that allows farmers to sell their products directly to consumers without intermediaries. Customers can purchase fresh products straight from the farmers, ensuring quality and fair pricing. This is a complete e-commerce website designed to facilitate seamless transactions between producers and buyers.",
+        stack: [{ name: "ReactJS" },{ name: "NodeJS" }, { name: "Express" }, { name: "MongoDB" }],
         image: '/image.png',
         live: "https://liveproject2.com",
-        github: "https://github.com/project2",
+        github: "https://github.com/SouroN21/FarmLink--ITP-project",
     },
     {
         num: "03",
-        category: "Full Stack",
-        title: "Project 3",
-        description: "Description for Project 3",
-        stack: [{ name: "React" }, { name: "Node.js" }, { name: "PostgreSQL" }],
-        image: '/image.png',
+        category: "Moblie Game",
+        title: "Android Car Game - ",
+        description: "An Android car game developed using Kotlin and Android Studio. The game features live scoring and a high score tracker with special notifications when a new high score is achieved. As the game progresses, players level up, the car speeds up, and they must avoid obstacles.",
+        stack: [{ name: "Kotlin" }, { name: "Android Studio" }],
+        image: '/game.jpg',
         live: "https://liveproject3.com",
         github: "https://github.com/project3",
     }, 
@@ -101,7 +101,7 @@ const Work = () => {
                                         <TooltipProvider delayDuration={100}>
                                             <Tooltip>
                                                 <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                                                    <BsArrowUpRight className="text-3xl text-white group-hover:text-accent transition-transform duration-300 group-hover:rotate-45" />
+                                                    <BsArrowUpRight className="text-3xl text-white transition-transform duration-300 group-hover:text-accent group-hover:rotate-45" />
                                                 </TooltipTrigger>
                                                 <TooltipContent>
                                                     <p>Live Project</p>

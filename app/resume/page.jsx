@@ -259,7 +259,7 @@ const Resume = () => {
                                                 <h4 className="text-2xl font-semibold text-accent">{item.project}</h4>
                                                 <p className="text-lg font-medium text-white">{item.role}</p>
                                                 <p className="text-sm text-gray-400">{item.technology}</p>
-                                                <p className="text-base text-white mt-2">{item.description}</p>
+                                                <p className="mt-2 text-base text-white">{item.description}</p>
                                             </li>
                                         ))}
                                     </ul>
@@ -328,7 +328,7 @@ const Resume = () => {
 
                             <TabsContent value="about" className="w-full text-center xl:text-left ">
                                 <div className="flex flex-col gap-[30px] ">
-                                    <h3 className="text-4xl font-bold ml-16">{about.title}</h3>
+                                    <h3 className="ml-16 text-4xl font-bold">{about.title}</h3>
                                     <p className="max-w-[600px] text-white/60 mx-2 xl:mx-0 ">
                                         {about.description}
                                     </p>
