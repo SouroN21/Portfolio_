@@ -32,19 +32,11 @@ const projects = [
     },
     {
         num: "02",
-<<<<<<< HEAD
         category: "Full Stack",
         title: "Online Agriculture Store - FarmLink ",
         description: "A platform that allows farmers to sell their products directly to consumers without intermediaries. Customers can purchase fresh products straight from the farmers, ensuring quality and fair pricing. This is a complete e-commerce website designed to facilitate seamless transactions between producers and buyers.",
         stack: [{ name: "ReactJS" },{ name: "NodeJS" }, { name: "Express" }, { name: "MongoDB" }],
-        image: '/image.png',
-=======
-        category: "Backend",
-        title: "Project 2",
-        description: "Description for Project 2",
-        stack: [{ name: "Node.js" }, { name: "Express" }, { name: "MongoDB" }],
         image: '/project2.png',
->>>>>>> 4ceede5abb503e36529d8734cc6efff5e9e17c9c
         live: "https://liveproject2.com",
         github: "https://github.com/SouroN21/FarmLink--ITP-project",
     },
