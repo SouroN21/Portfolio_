@@ -11,7 +11,7 @@ const Home = () => {
             <span>Software Developer</span>
             <h1 className="h1">
               Hello! I am <br /> 
-              <span className="bg-gradient-to-b from-accent to-white bg-clip-text text-transparent">Naveen Dasunpriya</span>
+              <span className="text-transparent bg-gradient-to-b from-accent to-white bg-clip-text">Naveen Dasunpriya</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
               I&apos;m an undergraduate pursuing a <span className="font-bold text-blue-500">BSc (Hons) in Information Technology at SLIIT </span>. 
@@ -20,13 +20,13 @@ const Home = () => {
             </p>
             <div className="flex flex-col items-center gap-8 xl:flex-row">
             <a 
-                href="/cv.pdf" 
+                href="/Naveen Dasunpriya.pdf" 
                 download 
               >
             <Button 
               variant="outline"
               size="lg"
-              className="flex items-center gap-2 uppercase bg-transparent border border-accent text-accent hover:bg-accent hover:text-primary -mt-5"
+              className="flex items-center gap-2 -mt-5 uppercase bg-transparent border border-accent text-accent hover:bg-accent hover:text-primary"
             >
                 <span>Download CV</span>
                 <FiDownload className="text-xl text-accent-hover"/>
