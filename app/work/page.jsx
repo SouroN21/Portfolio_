@@ -42,6 +42,16 @@ const projects = [
     },
     {
         num: "03",
+        category: "Full Stack",
+        title: "Online Farmacy Portal ",
+        description: "An online platform designed to help users easily find and order medicines from pharmacies across the island. Registered pharmacies are part of the system, allowing patients to upload their doctor’s prescriptions. Our pharmacists then review the prescriptions and process the medicine orders",
+        stack: [{ name: "PHP" }, { name: "HTML" }, { name: "JS" }, { name: "CSS" }],
+        image: '/project3.png',
+        live: "https://liveproject3.com",
+        github: "https://github.com/SouroN21/Pharmacy",
+    }, 
+    {
+        num: "04",
         category: "Moblie Game",
         title: "Android Car Game - ",
         description: "An Android car game developed using Kotlin and Android Studio. The game features live scoring and a high score tracker with special notifications when a new high score is achieved. As the game progresses, players level up, the car speeds up, and they must avoid obstacles.",
