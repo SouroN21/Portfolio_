@@ -151,14 +151,15 @@ const Work = () => {
                                             {/* Overlay */}
                                             <div className="absolute top-0 bottom-0 z-10 w-full h-full bg-black/10"></div>
                                             {/* Image */}
-                                            <div className="relative w-full h-full">
-                                                <Image
-                                                    src={project.image}
-                                                    layout="fill"
-                                                    className="object-cover rounded-lg"
-                                                    alt={project.title}
-                                                />
-                                            </div>
+                                            <div className="relative w-full h-64 md:h-full">
+    <Image
+        src={project.image}
+        layout="fill"
+        className="object-cover rounded-lg"
+        alt={project.title}
+    />
+</div>
+
                                         </div>
                                     </SwiperSlide>
                                 ))}
