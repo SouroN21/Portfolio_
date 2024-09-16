@@ -47,7 +47,7 @@ const projects = [
         description: "An online platform designed to help users easily find and order medicines from pharmacies across the island. Registered pharmacies are part of the system, allowing patients to upload their doctor’s prescriptions. Our pharmacists then review the prescriptions and process the medicine orders",
         stack: [{ name: "PHP" }, { name: "HTML" }, { name: "JS" }, { name: "CSS" }],
         image: '/project3.png',
-        live: "https://liveproject3.com",
+        live: "http://pharmacy-sliit-iwt.kesug.com/",
         github: "https://github.com/SouroN21/Pharmacy",
     }, 
     {
