@@ -55,7 +55,7 @@ const projects = [
         category: "Full Stack",
         title: "Expense-Tracker ",
         description: "The Expense Tracker app is a user-friendly financial tool built with React and styled using Tailwind CSS. It utilizes Firebase for secure cloud storage and real-time data synchronization, allowing users to easily add and track expenses. With automatic total calculations, it empowers users to manage their finances effectively from any device.",
-        stack: [{ name: "Next.Js" },{name:"Fire Base"}, { name: "TailwindCSS" }, { name: "JavaScript" }],
+        stack: [{ name: "Next.Js" },{name:"FireBase"}, { name: "TailwindCSS" }, { name: "JavaScript" }],
         image: '/project4.png',
         live: "https://expense-tracker-one-pi.vercel.app/",
         github: "https://github.com/SouroN21/Expense-Tracker-.git",
